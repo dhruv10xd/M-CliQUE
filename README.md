@@ -5,14 +5,14 @@
 - [Demo](#Demo)
   
 ## Install 
-1. Clone this repository
-```bash
-git clone https://github.com/dhruv10xd/Codemixed_Clinical_VQA.git
-```
-2. Clone the version 1.0 of LLaVA repository and navigate to LLaVA folder
+1. Clone the version 1.0 of LLaVA repository and navigate to LLaVA folder
 ```bash
 git clone -b v1.0 https://github.com/camenduru/LLaVA
 cd LLaVA
+```
+2. Clone this repository
+```bash
+git clone https://github.com/dhruv10xd/Codemixed_Clinical_VQA.git
 ```
 3. Install pre-requisites
 ```shell
