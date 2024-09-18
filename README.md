@@ -4,20 +4,12 @@
 - [Demo](#Demo)
   
 ## Install 
-1. Clone the version 1.0 of LLaVA repository and navigate to LLaVA folder
-```bash
-git clone -b v1.0 https://github.com/camenduru/LLaVA
-cd LLaVA
-```
-2. Clone this repository
+1. Clone this repository and navigate to Codemixed_Clinical_VQA folder
 ```bash
 git clone https://github.com/dhruv10xd/Codemixed_Clinical_VQA.git
+cd Codemixed_Clinical_VQA
 ```
-3. Install pre-requisites
-```shell
-pip install -q Pillow requests xformers accelerate.
-```
-4. Clone and Install IndicTransTokenizer (optional)
+2. Clone and Install IndicTransTokenizer (optional)
 ```shell
 pip install indic-nlp-library
 ```
@@ -28,6 +20,15 @@ cd IndicTransTokenizer
 ```shell
 !pip install --editable ./
 cd ..
+```
+3. Clone the version 1.0 of LLaVA repository and navigate to LLaVA folder
+```bash
+git clone -b v1.0 https://github.com/camenduru/LLaVA
+cd LLaVA
+```
+4. Install pre-requisites
+```shell
+pip install -q Pillow requests xformers accelerate.
 ```
 
 ## Demo
