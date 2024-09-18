@@ -70,7 +70,7 @@ For running LoRA models, please run the command below:
 ```shell
 python Demo/Python/mmsuccess_demo_lora.py
 ```
-
+<!--
 ### Gradio Web Interface
 For running normal models, please run the command below:
 ```shell
@@ -81,5 +81,5 @@ After running this command, you will get a local as well as public URL on your t
 In the web Inferface, on the left side, you can drag and drop or upload the image in the image box and can enter the corresponding query in the text box. You can optionally tick the checkbox to translate the query in case it is in a language other than Hindi/English/Hinglish or their codemixed versions. In that case you'll have to append your BING Translator API key and region into the code where it is specified.
 
 On the right side you can see the translated text in case you have selected the translation checkbox, and the output the model generates for your image and corresponding query.
-
+-->
 
