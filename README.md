@@ -4,10 +4,10 @@
 - [Demo](#Demo)
   
 ## Install 
-1. Clone this repository and navigate to Codemixed_Clinical_VQA folder
+1. Clone this repository and navigate to MMSUCCESS folder
 ```bash
-git clone https://github.com/dhruv10xd/Codemixed_Clinical_VQA.git
-cd Codemixed_Clinical_VQA
+git clone https://github.com/dhruv10xd/MMSUCCESS.git
+cd MMSUCCESS
 ```
 2. Clone and Install IndicTransTokenizer (optional)
 ```shell
@@ -47,14 +47,14 @@ If your query is multi-lingual and not codemixed, run this command
 ```shell
 python Demo/Python/translate_multilingual.py
 ```
-After running this command, you will be prompted to enter your query along with the language it is in. Then you will get translated query which you can enter in [Normal/LoRA Inference](https://github.com/dhruv10xd/Codemixed_Clinical_VQA/tree/main?tab=readme-ov-file#normal-model-inference)
+After running this command, you will be prompted to enter your query along with the language it is in. Then you will get translated query which you can enter in [Normal/LoRA Inference](https://github.com/dhruv10xd/MMSUCCESS#normal-model-inference)
 
 #### Codemixed Translation
 If your query is codemixed and is not in Hindi/English (i.e. any of the other 5 languages), please login into HuggingFace Hub first using your HF token, then run this command
 ```shell
 python Demo/Python/translate_codemixed.py
 ```
-After running this command, you will be prompted to enter your query, and LLaMA-3-8B will automatically detect the language present in your query. Then you will get translated query which you can enter in [Normal/LoRA Inference](https://github.com/dhruv10xd/Codemixed_Clinical_VQA/tree/main?tab=readme-ov-file#normal-model-inference)
+After running this command, you will be prompted to enter your query, and LLaMA-3-8B will automatically detect the language present in your query. Then you will get translated query which you can enter in [Normal/LoRA Inference](https://github.com/dhruv10xd/MMSUCCESS#normal-model-inference)
 
 
 #### Normal Model Inference
