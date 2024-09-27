@@ -14,10 +14,10 @@ model = AutoModelForSeq2SeqLM.from_pretrained(model_name, trust_remote_code=True
 ip = IndicProcessor(inference=True)
 
 # Ask for user input
-input_sentence = input("Please enter the text to translate: ")
+input_sentence = input("Please enter the query to translate: ")
 
 # Ask for language input
-source_language = input("Please choose a language from below options and input: \nPunjabi:Pa \nMarathi:Mr \nTamil:Ta \nTelugu:Te \nKannada:Kn\n")
+source_language = input("Please choose a language from below options which your query is in, and input: \nPunjabi:Pa \nMarathi:Mr \nTamil:Ta \nTelugu:Te \nKannada:Kn\n")
 
 # Map user input to source language codes
 if source_language == 'Pa':
@@ -79,4 +79,5 @@ with tokenizer.as_target_tokenizer():
 translations = ip.postprocess_batch(generated_text, lang=tgt_lang)
 
 # Output the translated text
-print(f"\nTranslated text:\n{translations[0]}")
+print(f"\nTranslated Query:\n{translations[0]}")
+print("\nPlease enter this translated query into MMSUCCESS now")
