@@ -56,9 +56,10 @@ def generate_translation(text):
 
 
 # Ask for user input
-input_text = input("Please enter the codemixed text: ")
+input_text = input("Please enter the codemixed query: ")
 
 
 # Generate and print the English translation
 translated_text = generate_translation(input_text)
-print("\nTranslated text:\n", translated_text)
+print("\nTranslated query:\n", translated_text)
+print("\nPlease enter this translated query into MMSUCCESS now")
