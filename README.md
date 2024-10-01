@@ -1,13 +1,13 @@
-# MMSUCCESS - Codemixed_Clinical_VQA
+# M-CliQUE - Codemixed_Clinical_VQA
 ## Contents
 - [Install](#Install)
 - [Demo](#Demo)
   
 ## Install 
-1. Clone this repository and navigate to MMSUCCESS folder
+1. Clone this repository and navigate to M-CliQUE folder
 ```bash
-git clone https://github.com/dhruv10xd/MMSUCCESS.git
-cd MMSUCCESS
+git clone https://github.com/dhruv10xd/M-CliQUE.git
+cd M-CliQUE
 ```
 2. Clone and Install IndicTransTokenizer (optional)
 ```shell
@@ -47,20 +47,20 @@ If your query is multi-lingual and not codemixed, run this command
 ```shell
 python Demo/Python/translate_multilingual.py
 ```
-After running this command, you will be prompted to enter your query along with the language it is in. Then you will get translated query which you can enter in [Normal/LoRA Inference](https://github.com/dhruv10xd/MMSUCCESS#normal-model-inference)
+After running this command, you will be prompted to enter your query along with the language it is in. Then you will get translated query which you can enter in [Normal/LoRA Inference](https://github.com/dhruv10xd/MM-CliQUE#normal-model-inference)
 
 #### Codemixed Translation
 If your query is codemixed and is not in Hindi/English (i.e. any of the other 5 languages), please login into HuggingFace Hub first using your HF token, then run this command
 ```shell
 python Demo/Python/translate_codemixed.py
 ```
-After running this command, you will be prompted to enter your query, and LLaMA-3-8B will automatically detect the language present in your query. Then you will get translated query which you can enter in [Normal/LoRA Inference](https://github.com/dhruv10xd/MMSUCCESS#normal-model-inference)
+After running this command, you will be prompted to enter your query, and LLaMA-3-8B will automatically detect the language present in your query. Then you will get translated query which you can enter in [Normal/LoRA Inference](https://github.com/dhruv10xd/M-CliQUE#normal-model-inference)
 
 
 #### Normal Model Inference
 For running normal models, please run the command below:
 ```shell
-python Demo/Python/mmsuccess_demo_normal.py
+python Demo/Python/mclique_demo_normal.py
 ```
 After running this command, the model will load and then you will be asked to input the path to the image. Following this, you will be prompted to input your query and the model will output a medically precise English Question summarizing your query. 
 You can do this for multiple queries. To exit the demo, please enter 'exit' when asked to input path to the image. 
@@ -68,7 +68,12 @@ You can do this for multiple queries. To exit the demo, please enter 'exit' when
 #### LoRA Model Inference
 For running LoRA models, please run the command below:
 ```shell
-python Demo/Python/mmsuccess_demo_lora.py
+python Demo/Python/mclique_demo_lora.py
+```
+#### Back Translation
+If you wish to translate the answer given by the doctor back into your local language, please run the command below:
+```shell
+python Demo/Python/back_translate_multilingual.py
 ```
 <!--
 ### Gradio Web Interface
